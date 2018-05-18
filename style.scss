@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background: #E8E8E8;
+}
+
+.playing,
+.results {
+  text-align: left;
+}
+
+.music {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.track {
+  flex-basis: 25%;
+  padding: 20px 0;
+  margin: 20px 0;
+  background: white;
+
+  &:hover {
+    background: #252525;
+    color: white;
+    cursor: pointer;
+  }
+}
