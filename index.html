@@ -10,18 +10,20 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="header">
+    <h1 class="header__title">iTunes Player</h1>
+  </header>
   <div class="container">
-    <h1>iTunes Player</h1>
     <audio class="audio" controls autoplay></audio>
     
-    <div class="playing">Now Playing:</div>
+    <div class="playing"></div>
     <form id="search-music">
       <div class="input-group">
         <input type="text" id="search">
-        <button type="submit" class="button-dark">Search</button>
+        <button type="submit" class="button-dark button-lg">Search</button>
       </div>
     </form>
-    <div class="results">Search Results</div>
+    <div class="results"></div>
     <div class="music">
 
     </div>

@@ -3,6 +3,29 @@ body {
   background: #E8E8E8;
 }
 
+audio {
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
+.header {
+  background: #252525;
+
+  &__title {
+    color: #E8E8E8;
+    padding: 20px;
+    font-weight: bold;
+  }
+}
+
+#search-music {
+  margin-top: 50px;
+}
+
+#search {
+  height: 45px;
+}
+
 .playing,
 .results {
   text-align: left;
@@ -10,18 +33,45 @@ body {
 
 .music {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .track {
-  flex-basis: 25%;
-  padding: 20px 0;
-  margin: 20px 0;
+  flex-basis: 18%;
+  padding-top: 20px;
+  margin: 20px 1%;
   background: white;
 
   &:hover {
     background: #252525;
-    color: white;
+    color: #E8E8E8;
     cursor: pointer;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__name {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  &__artist {
+    margin-top: 15px;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .track {
+    flex-basis: 23%;
+  }
+}
+
+@media (max-width: 767px) {
+  .track {
+    flex-basis: 48%;
   }
 }
