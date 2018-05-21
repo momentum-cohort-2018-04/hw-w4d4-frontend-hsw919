@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iTunes Player</title>
+  <link rel="stylesheet" href="./node_modules/shoelace-css/dist/shoelace.css">
+  <link rel="stylesheet" href="style.scss">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">iTunes Player</h1>
+  </header>
+  <div class="container">
+    <audio class="audio" controls autoplay></audio>
+    
+    <div class="playing"></div>
+    <form id="search-music">
+      <div class="input-group">
+        <input type="text" id="search" placeholder="Search by artist, album, or song">
+        <button type="submit" class="button-dark button-lg">Search</button>
+      </div>
+    </form>
+    <div class="results"></div>
+    <div class="music">
+
+    </div>
+  </div>
+</body>
+</html>
